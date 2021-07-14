@@ -1,0 +1,757 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------
+            Fonts
+-------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* --------------------------
+        Common Style
+-------------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ :root{
+    --header-bg-color: #2D25A0;
+    --btn-color: #E02C6D;
+    --wh-color: #FFFFFF;
+    --small-text-color: #6C6C6C;
+    --title-color: #18191F;
+    --icon-color: #969bab;
+    --icon-bg-color: rgba(11, 13, 23, 0.1);
+    --other-title:#173562;
+}
+.container{
+    width: 1152px;
+    margin: 0 auto;
+}
+.all-btn{
+    color: var(--wh-color);
+    background-color: var(--btn-color);
+    padding: 10px 24px;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 3px solid transparent;
+    font-family: 'Poppins', sans-serif;
+}
+.all-btn:hover{
+    border: 3px solid var(--btn-color);
+    background-color: transparent;
+}
+.watch p{
+    margin-right: 8px;
+    
+}
+.left-part .watch:hover{
+    color: black;
+}
+
+#goto-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+  }
+.fa-arrow-circle-up{
+    font-size: 50px;
+    color: var(--btn-color);
+}
+/* --------------------------
+        Key Frames
+-------------------------- */
+@keyframes mymove {
+    from {right: -100px;}
+    to {right: 0px;}
+  }
+
+@keyframes myleft {
+    from {left: -100px;}
+    to {left: 0px;}
+  }
+/* --------------------------
+            Header
+-------------------------- */
+
+header{
+    width: 100%;
+    height: 667px;
+    background-color: var(--header-bg-color);
+    display: flex;
+}
+ /*----------Menu--------*/
+.top-nav{
+    display: flex;
+    margin-top: 52px;
+    align-items: center;
+    justify-content: space-between;
+}
+.left ul{
+    display: flex;
+}
+.left ul li{
+    list-style: none;
+    margin-right: 36px;
+    border-bottom: 4px solid transparent;
+    padding-bottom: 6px;
+    transition: 0.3s ease;
+}
+.left ul li:hover{
+    border-bottom: 4px solid var(--btn-color);
+    padding-bottom: 6px; 
+}
+.left ul li a{
+    text-decoration: none;
+    color: var(--wh-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.right .all-btn p{
+    margin: 0px 0px 0px 8px;
+}
+.mobile-menu{
+    display: none;   
+}
+
+
+ /*----------Others-Slider--------*/
+ 
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.left-side{
+    position: relative;
+    animation: myleft 1.5s 1;
+}
+.left-side h1{
+    font-weight: bold;
+    font-size: 64px;
+    color: var(--wh-color);
+    margin-bottom: 27px;
+}
+.left-side h1:hover{
+    letter-spacing: 10px;
+    transition: letter-spacing 1s ease-in-out;
+}
+.left-side .watch{
+    padding: 10px 24px;
+}
+.right-side img{
+    width: 556.01px;
+    height: 438px;
+    position: relative;
+    animation: mymove 1.5s 1;
+}
+.right-side img:hover{
+    transform:scale(1.05);
+    transition: transform 0.8s ease-in-out;
+}
+
+/* --------------------------
+        Post Section
+-------------------------- */
+.players-posts{
+   display: flex;
+   justify-content: center;
+   margin-top: 70px;
+} 
+.posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.post-container{
+    width: 330px;
+    height: 474px;
+    background: var(--wh-color); 
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); 
+}
+.post-img{
+    overflow: hidden;
+}
+.post-img img{
+    width: 300px;
+    height: 256px;
+}
+.post-img img:hover{
+    transform: scale(1.2) rotate(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+.post-details h2{
+    margin: 10px 0;
+    font-size: 28px;
+    color: var(--title-color);
+}
+.post-details p{
+    font-size: 16px;
+    color: var(--small-text-color);
+    line-height: 26px;
+}
+
+/* ----------------------------------
+        Bonus-Section-Start
+------------------------------------ */
+
+ /*----------Team-Section--------*/
+.all-teams{
+    margin-top: 165px;
+}
+.teams{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.teams a img{
+    max-width: 100%;
+}
+.teams a:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.title h1{
+    font-size: 48px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    color: var(--other-title);
+}
+
+ /*----------Group Fection--------*/
+ .groups{
+     margin-top: 80px;
+ }
+ .groups .container >h1{
+     font-size: 48px;
+     margin-bottom: 43px;
+     color: var(--other-title);
+ }
+.group-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.group-a, .group-b{
+    border-radius: 12px;
+    padding:40px 20px;
+    box-shadow: 0 10px 30px rgb(44 62 80 / 30%);
+    align-items: center;
+    
+}
+.group-a:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+.group-b:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+.group-title h1{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: var(--small-text-color);
+}
+.card{
+    display: flex;
+}
+.card .group{
+    text-align: center;
+}
+.card .group img{
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+/* ----------------------------------
+        Bonus-Section-End
+------------------------------------ */
+
+/* ------------------------------
+        Optional-Section
+------------------------------- */
+
+.optional-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 165px;
+    margin-bottom: 158px;
+}
+.optional{
+    display: flex;
+    
+    align-items: center;
+}
+.left-part{
+    width: 469px;
+}
+
+.left-part h1{
+    font-size: 48px;
+line-height: 60px;
+    color: var(--title-color);
+}
+.left-part > p{
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--small-text-color);
+    margin-bottom: 24px;
+}
+.right-part{
+    margin-left: 66px;
+}
+.right-part img{
+    width: 567px;
+    height: 427px;
+    
+}
+
+/* --------------------------
+        Footer Style
+-------------------------- */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.icons{
+    display: flex;
+    margin: 20px 0;
+}
+
+.footer-icon{
+    font-size: 17px;
+    color: gray;
+    
+}
+
+.icon-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--icon-bg-color);
+    margin-right: 14px;
+    
+}
+.icon-bg:hover{
+    transform: translatey(10px);
+    transition: transform 0.5s;
+}
+.copyright p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 63px;
+}
+
+
+
+
+
+/* -------------------------------------
+        Media Queries For Mobile
+---------------------------------------- */
+@media only screen and (max-width: 688px){
+    /*----------Menu--------*/
+    .container{
+        width: 90%;
+    }
+    nav{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        margin-top: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fa-bars{
+        font-size: 18px;
+        color: var(--wh-color);
+    }
+    .all-btn{
+        font-size: 12px;
+        width: 89.98px;
+        height: 32.88px;
+        display: flex;
+        justify-content: center;
+    }
+    .all-btn p{
+        margin: 0px 0px 0px 6px;
+    }
+    /*----------Slider--------*/
+    .slider{
+        display: block;
+    }
+    .left-side h1{
+        font-size: 36px;
+    }
+    .left-side h1:hover{
+        letter-spacing: 8px;
+        transition: letter-spacing 1s ease-in-out;
+    }
+    .watch {
+        width: 168px;
+        height: 44px;
+        font-size: 16px;
+    }
+    .watch p{
+        margin-right: 8px;
+    }  
+    .right-side{
+        display: flex;
+        justify-content: center;
+    }
+    .right-side img{
+        width: 329px;
+        height: 259.17px;
+        margin-top: 50px;
+    }
+    /*----------Posts--------*/
+    .posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+        /* ----------------------------------
+        Bonus-Section-Start
+    ------------------------------------ */
+     /*----------Team Section--------*/
+     .all-teams{
+        margin-top: 43px;
+    }
+    .teams{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .title h1{
+        font-size: 48px;
+        text-align: center;
+        margin-right: 50px;
+        
+    }
+     /*----------Group Section--------*/
+     .groups .container >h1{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+     .group-cards{
+         flex-direction: column;
+     }
+     .group-a{
+         margin-bottom: 40px;
+     }
+     .group-a, .group-b{
+        box-shadow: 0 0px 20px rgb(44 62 80 / 20%);
+     }
+
+    /* ----------------------------------
+            Bonus-Section-End
+    ------------------------------------ */
+
+
+    /*----------optional--------*/
+    .optional-section{
+        margin-bottom: 43px;
+        margin-top: 43px;
+    }
+    .optional{
+        flex-direction: column;
+    }
+    .left-part{
+        width: 329px;
+    }
+    
+    .left-part h1{
+        font-size: 30px;
+    }
+    
+    .right-part{
+        margin-left: 0px;
+        margin-top: 29px;
+    }
+    .right-part img{
+        width: 328px;
+        height: 248px;
+        
+        
+    }
+    /*----------Footer--------*/
+    .logo img{
+        width: 271px;
+        height: 63px;
+    }
+
+}
+
+/* -------------------------------------
+        Media Queries For Tablate
+---------------------------------------- */
+
+@media only screen and (min-width: 689px) and (max-width: 992px){
+      /*----------Menu--------*/
+      .container{
+        width: 90%;
+    }
+    nav{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        margin-top: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fa-bars{
+        font-size: 18px;
+        color: var(--wh-color);
+    }
+    .all-btn{
+        font-size: 12px;
+        width: 89.98px;
+        height: 32.88px;
+        display: flex;
+        justify-content: center;
+    }
+    .all-btn p{
+        margin: 0px 0px 0px 6px;
+    }
+    /*----------Slider--------*/
+    .left-side h1{
+        font-size: 48px;
+    }
+    .left-side h1:hover{
+        letter-spacing: 0px;
+        transition: letter-spacing 1s ease-in-out;
+    }
+    .watch {
+        width: 168px;
+        height: 44px;
+        font-size: 16px;
+    }
+    
+    .watch p{
+        margin-right: 8px;
+    }
+    .right-side img{
+        width: 100%;
+        margin-top: 50px;
+    }
+    /*----------Posts--------*/
+    .posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+       /* ----------------------------------
+        Bonus-Section-Start
+    ------------------------------------ */
+     /*----------Team Section--------*/
+     .all-teams{
+        margin-top: 60px;
+    }
+    .teams{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .title h1{
+        font-size: 48px;
+        text-align: center;
+        margin-right: 50px;
+        
+    }
+     /*----------Group Section--------*/
+     .groups .container >h1{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+     .group-cards{
+         flex-direction: column;
+         align-items: center;
+     }
+     .group-title{
+        padding-bottom: 20px;
+     }
+     .group-cards h1{
+         text-align: center;
+     }
+     .group-a{
+         margin-bottom: 50px;
+     }
+     .group-a, .group-b{
+        box-shadow: 0 0px 20px rgb(44 62 80 / 20%);
+     }
+
+    /* ----------------------------------
+            Bonus-Section-End
+    ------------------------------------ */
+
+    /*----------optional--------*/
+    .optional-section{
+        margin-bottom: 43px;
+    }
+    .left-part{
+        width: 329px;
+    }
+    
+    .left-part h1{
+        font-size: 25px;
+    }
+    .left-part .watch:hover{
+        color: black;
+    }
+    .right-part{
+        margin-left: 0px;
+        margin-top: 29px;
+    }
+    .right-part img{
+        width: 328px;
+        height: 248px;
+    }
+    /*----------Footer--------*/
+    .logo img{
+        width: 271px;
+        height: 63px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1030px){
+    /*----------Menu--------*/
+    .container{
+        width: 90%;
+    }
+    nav{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        margin-top: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fa-bars{
+        font-size: 18px;
+        color: var(--wh-color);
+    }
+    .all-btn{
+        font-size: 12px;
+        width: 89.98px;
+        height: 32.88px;
+        display: flex;
+        justify-content: center;
+    }
+    .all-btn p{
+        margin: 0px 0px 0px 6px;
+    }
+    /*----------Slider--------*/
+    .left-side h1{
+        font-size: 48px;
+    }
+    .left-side h1:hover{
+        letter-spacing: 0px;
+        transition: letter-spacing 1s ease-in-out;
+    }
+    .watch {
+        width: 168px;
+        height: 44px;
+        font-size: 16px;
+    }
+    
+    .watch p{
+        margin-right: 8px;
+    }
+    .right-side img{
+        width: 100%;
+        margin-top: 50px;
+    }
+    /*----------Posts--------*/
+    .posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+       /* ----------------------------------
+        Bonus-Section-Start
+    ------------------------------------ */
+     /*----------Team Section--------*/
+     .all-teams{
+        margin-top: 60px;
+    }
+    .teams{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .title h1{
+        font-size: 48px;
+        text-align: center;
+        margin-right: 50px;
+        
+    }
+     /*----------Group Section--------*/
+     .groups .container >h1{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+     .group-cards{
+         flex-direction: column;
+         align-items: center;
+     }
+     .group-title{
+        padding-bottom: 20px;
+     }
+     .group-cards h1{
+         text-align: center;
+     }
+     .group-a{
+         margin-bottom: 50px;
+     }
+     .group-a, .group-b{
+        box-shadow: 0 0px 20px rgb(44 62 80 / 20%);
+     }
+
+    /* ----------------------------------
+            Bonus-Section-End
+    ------------------------------------ */
+
+    /*----------optional--------*/
+    .optional-section{
+        margin-bottom: 43px;
+    }
+    .left-part{
+        width: 329px;
+    }
+    
+    .left-part h1{
+        font-size: 25px;
+    }
+    .left-part .watch:hover{
+        color: black;
+    }
+    .right-part{
+        margin-left: 0px;
+        margin-top: 29px;
+    }
+    .right-part img{
+        width: 328px;
+        height: 248px;
+    }
+    /*----------Footer--------*/
+    .logo img{
+        width: 271px;
+        height: 63px;
+    }
+}
