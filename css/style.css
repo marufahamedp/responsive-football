@@ -42,6 +42,7 @@ body{
     cursor: pointer;
     border: 3px solid transparent;
     font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
 }
 .all-btn:hover{
     border: 3px solid var(--btn-color);
@@ -131,10 +132,10 @@ header{
     font-size: 64px;
     color: var(--wh-color);
     margin-bottom: 27px;
+    transition: letter-spacing 1s ease-in-out;
 }
 .left-side h1:hover{
     letter-spacing: 10px;
-    transition: letter-spacing 1s ease-in-out;
 }
 .left-side .watch{
     padding: 10px 24px;
@@ -144,10 +145,11 @@ header{
     height: 438px;
     position: relative;
     animation: mymove 1.5s 1;
+    transition: transform 0.5s ease-in-out;
 }
 .right-side img:hover{
-    transform:scale(1.05);
-    transition: transform 0.8s ease-in-out;
+    transform:scale(1.07);
+    
 }
 
 /* --------------------------
@@ -177,10 +179,11 @@ header{
 .post-img img{
     width: 300px;
     height: 256px;
+    transition: transform 0.3s ease-in-out;
 }
 .post-img img:hover{
     transform: scale(1.2) rotate(5deg);
-    transition: transform 0.3s ease-in-out;
+    
 }
 .post-details h2{
     margin: 10px 0;
@@ -208,9 +211,12 @@ header{
 .teams a img{
     max-width: 100%;
 }
+.teams a {
+    transition: transform 0.3s ease-in-out;
+}
 .teams a:hover{
     transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+    
 }
 .title h1{
     font-size: 48px;
@@ -237,15 +243,16 @@ header{
     padding:40px 20px;
     box-shadow: 0 10px 30px rgb(44 62 80 / 30%);
     align-items: center;
+    transition: transform 0.3s ease-in-out;
     
 }
 .group-a:hover{
     transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
+    
 }
 .group-b:hover{
     transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
+  
 }
 .group-title h1{
     font-size: 38px;
@@ -372,11 +379,12 @@ line-height: 60px;
     border-radius: 50%;
     background-color: var(--icon-bg-color);
     margin-right: 14px;
+    transition: transform 0.5s;
     
 }
 .icon-bg:hover{
     transform: translatey(10px);
-    transition: transform 0.5s;
+    
 }
 .copyright p{
     font-size: 18px;
@@ -426,10 +434,11 @@ line-height: 60px;
     }
     .left-side h1{
         font-size: 36px;
+        transition: letter-spacing 1s ease-in-out;
     }
     .left-side h1:hover{
         letter-spacing: 8px;
-        transition: letter-spacing 1s ease-in-out;
+        
     }
     .watch {
         width: 168px;
@@ -568,10 +577,11 @@ line-height: 60px;
     /*----------Slider--------*/
     .left-side h1{
         font-size: 48px;
+        transition: letter-spacing 1s ease-in-out;
     }
     .left-side h1:hover{
         letter-spacing: 0px;
-        transition: letter-spacing 1s ease-in-out;
+        
     }
     .watch {
         width: 168px;
@@ -699,10 +709,11 @@ line-height: 60px;
     /*----------Slider--------*/
     .left-side h1{
         font-size: 48px;
+        transition: letter-spacing 1s ease-in-out;
     }
     .left-side h1:hover{
         letter-spacing: 0px;
-        transition: letter-spacing 1s ease-in-out;
+        
     }
     .watch {
         width: 168px;
