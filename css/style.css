@@ -484,6 +484,14 @@ line-height: 60px;
      .group-a, .group-b{
         box-shadow: 0 0px 20px rgb(44 62 80 / 20%);
      }
+     .up-coming-match .container h1{
+         text-align: center;
+     }
+     .tournaments{
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     /* ----------------------------------
             Bonus-Section-End
@@ -622,6 +630,10 @@ line-height: 60px;
         box-shadow: 0 0px 20px rgb(44 62 80 / 20%);
      }
 
+     .tournaments{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     /* ----------------------------------
             Bonus-Section-End
     ------------------------------------ */
@@ -748,7 +760,10 @@ line-height: 60px;
      .group-a, .group-b{
         box-shadow: 0 0px 20px rgb(44 62 80 / 20%);
      }
-
+     .tournaments{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     /* ----------------------------------
             Bonus-Section-End
     ------------------------------------ */
