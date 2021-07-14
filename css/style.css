@@ -54,15 +54,7 @@ body{
     color: black;
 }
 
-#goto-top {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-  }
-.fa-arrow-circle-up{
-    font-size: 50px;
-    color: var(--btn-color);
-}
+
 /* --------------------------
         Key Frames
 -------------------------- */
